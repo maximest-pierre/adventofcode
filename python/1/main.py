@@ -2,9 +2,9 @@
 def part1(values):
     for i in range(0, len(values)):
         wanted_value = 2020 - values[i]
-        print(wanted_value)
         if wanted_value in values:
-            return (values[i] * wanted_value)
+            return values[i] * wanted_value
+
 
 def part2(values):
     for i in range(0, len(values)):
@@ -12,7 +12,8 @@ def part2(values):
             wanted_value = 2020 - values[i] - values[j]
 
             if wanted_value in values:
-                return(values[i] * values[j] * wanted_value)
+                return values[i] * values[j] * wanted_value
+
 
 if __name__ == "__main__":
     # Open the file, read lines and strip the \n character

@@ -7,6 +7,7 @@ with open('input') as file:
         dict([(line.split(":")) for line in passport]) for passport in passports
     ]
 
+
 def part1(pass_dict):
     result = []
     for passport in pass_dict:
@@ -15,6 +16,7 @@ def part1(pass_dict):
         elif len(passport) == 7 and 'cid' not in passport.keys():
             result.append(passport)
     return result
+
 
 def part2(pass_dict):
     result = []
@@ -45,5 +47,5 @@ def part2(pass_dict):
 
 
 if __name__ == '__main__':
-    print("The first answer is: {}".format(part1(pass_dict)))
-    print("The second answer is: {}".format(part2(pass_dict)))
+    print("The first answer is: {}".format(len(part1(pass_dict))))
+    print("The second answer is: {}".format(len(part2(pass_dict))))

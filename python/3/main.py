@@ -12,6 +12,7 @@ def part1(rows):
 
     return trees_encounter
 
+
 def part2(rows):
 
     slopes = [[1,1], [3, 1], [5, 1], [7,1], [1, 2]]
@@ -33,6 +34,7 @@ def part2(rows):
 
     return result
 
+
 if __name__ == "__main__":
     # Open the file and readlines
     with open('input') as file:
@@ -41,4 +43,3 @@ if __name__ == "__main__":
     
     print("The first answer is: {}".format(part1(rows)))
     print("The second answer is: {}".format(part2(rows)))
-

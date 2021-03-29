@@ -1,7 +1,9 @@
 from collections import Counter
 
+
 def parse_line(line):
     return line.strip().replace("-", " ").replace(":", "").split(" ")
+
 
 def part1(rows):
     
@@ -17,6 +19,7 @@ def part1(rows):
             count = count + 1
 
     return count
+
 
 def part2(rows):
     count = 0
@@ -45,4 +48,3 @@ if __name__ == "__main__":
 
         print("The first answer is: {}".format(part1(rows)))
         print("The second answer is: {}".format(part2(rows)))
-        
