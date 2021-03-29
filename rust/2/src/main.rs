@@ -63,7 +63,7 @@ fn part_2() -> i32 {
 
 fn main() {
     let part1_result = part_1();
-    println!("Result for part1 is: {}", part1_result);
+    println!("The first answer is: {}", part1_result);
     let part2_result = part_2();
-    println!("Result for part2 is: {}", part2_result);
+    println!("The second answer is: {}", part2_result);
 }

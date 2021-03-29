@@ -28,7 +28,7 @@ fn toboggan(forest: &Vec<String>, vx: usize, vy: usize) -> u64 {
     return tree_count
 }
 
-fn part1() {
+fn part1() -> u64{
     let input = read_input();
     if let Err(e) = &input {
         eprintln!("Error occured: {}", e);
@@ -39,10 +39,10 @@ fn part1() {
 
     let tree_count = toboggan(&forest, 3, 1);
 
-    println!("Part1: {}", tree_count);
+    return tree_count;
 }
 
-fn part2() {
+fn part2() ->u64{
     let input = read_input();
     if let  Err(e) = &input {
         eprintln!("Error occured: {}", e);
@@ -61,10 +61,12 @@ fn part2() {
 
     let tree_count: u64 = tree_results.iter().fold(1, |acc, x| acc * x);
 
-    println!("Part2 : {}", tree_count);
+    return tree_count;
 }
 
 fn main() {
-    part1();
-    part2();
+    let part1_result = part1();
+    println!("The first answer is: {}", part1_result);
+    let part2_result = part2();
+    println!("The second answer is: {}", part2_result);
 }
