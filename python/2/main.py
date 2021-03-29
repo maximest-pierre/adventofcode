@@ -42,6 +42,7 @@ if __name__ == "__main__":
     # Open the file and readlines
     with open('input') as file:
         rows = file.readlines()
-        print(part1(rows))
-        print(part2(rows))
+
+        print("The first answer is: {}".format(part1(rows)))
+        print("The second answer is: {}".format(part2(rows)))
         

@@ -39,5 +39,6 @@ if __name__ == "__main__":
         # convert lines into array and strip \n
         rows = [row.strip('\n') for row in file.readlines()]
     
-    print(part1(rows))
-    print(part2(rows))
+    print("The first answer is: {}".format(part1(rows)))
+    print("The second answer is: {}".format(part2(rows)))
+

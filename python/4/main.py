@@ -45,5 +45,5 @@ def part2(pass_dict):
 
 
 if __name__ == '__main__':
-    print(len(part1(pass_dict)))
-    print(len(part2((pass_dict))))
+    print("The first answer is: {}".format(part1(pass_dict)))
+    print("The second answer is: {}".format(part2(pass_dict)))
